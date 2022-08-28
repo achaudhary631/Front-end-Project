@@ -1,0 +1,1468 @@
+@import 'var';
+@import 'reser';
+
+
+header {
+    background: $bg;
+}
+
+/*-----header-------------------- */
+
+.container1 {
+    @include flexmain;
+    color: $w;
+
+    @include res {
+        padding: 15px;
+    }
+
+    img {
+        width: 188px;
+        height: 55px;
+        margin: 20px 0;
+    }
+}
+
+.nav {
+    line-height: 100px;
+
+    span {
+        display: none;
+
+        @include res {
+            display: block;
+        }
+    }
+
+    ul {
+        @include res {
+            display: none;
+        }
+
+        li {
+            display: inline;
+            padding: 20px;
+
+            a {
+                color: $w;
+                font-size: 16px;
+                font-weight: 700;
+
+                &:hover {
+                    color: $brand;
+                }
+            }
+
+        }
+
+    }
+}
+
+.home {
+    color: $brand  !important;
+}
+
+.btn1 {
+    background: $brand;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 50px;
+
+    a {
+        color: $bg  !important;
+    }
+
+    &:hover {
+        background: $w;
+    }
+}
+
+/*----------------banner---------- */
+
+.banner {
+    background-image: url(../image/pexels-david-rama-535431.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container2 {
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba($color: #000, $alpha: 0.3);
+    padding: 150px 0;
+
+    @include res {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 90px;
+        color: $w;
+
+        @include res {
+            font-size: 40px;
+        }
+    }
+
+    span {
+        color: $brand;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+}
+
+.btn2 {
+    padding: 10px 30px;
+    font-size: 16px;
+    background: $brand;
+    border-radius: 50px;
+    border: none;
+
+    a {
+        color: $bg;
+    }
+
+    &:hover {
+        background: $w;
+        opacity: 0.7;
+    }
+}
+
+.btn3 {
+    background: transparent;
+    border: 4px $w solid;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 50px;
+
+    a {
+        color: $w;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: $brand;
+        border: none;
+
+        a {
+            color: $bg ;
+        }
+    }
+}
+
+/*-----------------main----------- */
+
+.main {
+    @include flexmain;
+    padding: 100px 0;
+
+    @include res {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: block;
+
+    }
+
+    .imp {
+        border-left: 4px $brand solid;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 48px;
+        padding-bottom: 20px;
+
+        span {
+            color: $brand;
+        }
+    }
+
+    p {
+        line-height: 26px;
+        color: rgba($color: #000, $alpha: 0.7);
+    }
+
+    .right {
+        margin-left: 20px;
+
+        img {
+            @include res {
+                margin-top: 40px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.lefta {
+    @include flex;
+    margin-top: 30px;
+
+    @include res {
+        display: block;
+    }
+
+    .left1 {
+        border-right: 1px solid #E3E3E3;
+
+        @include res {
+            border: none;
+        }
+
+        .left1a {
+            padding: 30px;
+            padding-left: 0;
+            border-bottom: 1px solid #E3E3E3;
+
+            @include res {
+                border: none;
+            }
+
+            h3 {
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+
+            P {
+                padding-bottom: 26px;
+
+                @include res {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .left1b {
+            padding: 30px 0;
+
+            @include res {
+                padding: 15px 0;
+            }
+
+            h3 {
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+
+    .left2 {
+        .left2a {
+            padding: 30px;
+            border-bottom: 1px solid #E3E3E3;
+
+            @include res {
+                border: none;
+                padding: 30px 0;
+            }
+
+            h3 {
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+        }
+
+        .left2b {
+            padding: 30px;
+
+            @include res {
+                padding: 15px 0;
+            }
+
+            h3 {
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+.btn4 {
+    padding: 15px 30px;
+    margin-top: 40px;
+    border-radius: 50px;
+    border: none;
+    background: $brand;
+    margin-right: 30px;
+
+    @include res {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        background: $bg;
+
+        a {
+            color: $w;
+        }
+    }
+
+    a {
+        color: $bg;
+
+    }
+}
+
+.btn5 {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: $w;
+
+    a {
+        color: $bg;
+    }
+
+    &:hover {
+        background: $bg;
+
+        a {
+            color: $w;
+        }
+    }
+}
+
+/*-----------slider-------------*/
+
+.slider {
+    background: #F7F7F7;
+    padding: 70px 0;
+
+    @include res {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+
+    .text {
+        @include body;
+        text-align: center;
+
+        h4 {
+            border-left: 4px $brand solid;
+            display: inline-block;
+            padding-left: 15px;
+            font-size: 17px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            padding-bottom: 40px;
+
+            @include res {
+                font-size: 40px;
+            }
+        }
+
+        span {
+            color: $brand;
+        }
+    }
+}
+
+.pic {
+    @include flexmain;
+
+    @include res {
+        display: block;
+    }
+
+    .pic1 {
+        background-image: url(../image/pic1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @include res {
+            margin-bottom: 20px;
+        }
+
+        .pica {
+            background-color: rgba($color: #000, $alpha: 0.3);
+            padding: 250px 190px;
+
+            h2 {
+                position: absolute;
+                top: 350px;
+                left: 30px;
+                color: $w;
+
+                &:hover {
+                    color: yellow;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                top: 390px;
+                left: 30px;
+                color: yellow;
+            }
+
+            p {
+                position: absolute;
+                top: 420px;
+                left: 30px;
+                color: $w;
+                font-size: 17px;
+            }
+
+            h5 {
+                position: absolute;
+                top: 450px;
+                left: 30px;
+                color: yellow;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .pic2 {
+        background-image: url(../image/pic2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @include res {
+            margin-bottom: 20px;
+        }
+
+        .picb {
+            background-color: rgba($color: #000, $alpha: 0.3);
+            padding: 250px 190px;
+
+            h2 {
+                position: absolute;
+                top: 350px;
+                left: 30px;
+                color: $w;
+
+                &:hover {
+                    color: yellow;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                top: 390px;
+                left: 30px;
+                color: yellow;
+            }
+
+            p {
+                position: absolute;
+                top: 420px;
+                left: 30px;
+                color: $w;
+                font-size: 17px;
+            }
+
+            h5 {
+                position: absolute;
+                top: 450px;
+                left: 30px;
+                color: yellow;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .pic3 {
+        background-image: url(../image/pic3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @include res {
+            margin-bottom: 20px;
+        }
+
+        .picc {
+            background-color: rgba($color: #000, $alpha: 0.3);
+            padding: 250px 190px;
+
+            h2 {
+                position: absolute;
+                top: 350px;
+                left: 30px;
+                color: $w;
+
+                &:hover {
+                    color: yellow;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                top: 390px;
+                left: 30px;
+                color: yellow;
+            }
+
+            p {
+                position: absolute;
+                top: 420px;
+                left: 30px;
+                color: $w;
+                font-size: 17px;
+            }
+
+            h5 {
+                position: absolute;
+                top: 450px;
+                left: 30px;
+                color: yellow;
+                font-size: 15px;
+            }
+        }
+
+    }
+}
+
+/*-------------gallery------------*/
+
+.gallery {
+    @include body;
+    margin: 70px auto;
+    padding-top: 20px;
+
+    @include res {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .gallerytext {
+        h3 {
+            border-left: 4px $brand solid;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 48px;
+
+            &:hover {
+                color: $brand;
+            }
+        }
+    }
+
+    .gallerylogo {
+        @include flex;
+        margin: 40px 0;
+        text-align: center;
+        line-height: 20px;
+
+        @include res {
+            display: block;
+        }
+
+        h3 {
+            padding-top: 20px;
+
+            &:hover {
+                color: $brand;
+            }
+        }
+
+        .logo1 {
+            padding: 60px;
+            padding-bottom: 20px;
+            background: #FBFBFB;
+
+            @include res {
+                margin-bottom: 25px;
+            }
+
+            img {
+                &:hover {
+                    transform: translate(0px, -5px);
+                }
+            }
+        }
+    }
+}
+
+/*-------------review--------------*/
+
+.review {
+    display: flex;
+
+    @include res {
+        display: block;
+    }
+
+    .left {
+        background-image: url(../image/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 30%;
+        position: relative;
+        background-position: 0 50px;
+
+        .left1 {
+            @include res {
+                padding: 50%;
+            }
+        }
+
+    }
+
+    .right {
+        background-image: url(../image/bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 70%;
+        position: relative;
+        padding: 350px;
+
+        @include res{
+            padding: 240px;
+            
+        }
+        .text {
+            position: absolute;
+            top: 70px;
+            left: 30px;
+            color: $w;
+            @include res {
+                left: 15px;   
+            }
+
+            h3 {
+                border-left: 4px $brand solid;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                @include res{
+                    font-size: 14px;
+                }
+            }
+
+            h1 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 40px;
+                @include res{
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    color: $brand;
+                }
+            }
+
+            .btn6 {
+                @include res{
+                    font-size: 12px;
+                }
+                padding: 15px 25px;
+                border-radius: 50px;
+                border: none;
+                background: $brand;
+                font-size: 15px;
+                font-weight: 550;
+                margin-right: 30px;
+               
+                &:hover {
+                    background: $bg;
+                    
+                    a {
+                        color: $w
+                    }
+                }
+                a {
+                    color: $bg;
+                }
+                
+            }
+
+            .btn7 {
+                @include res{
+                    font-size: 12px;
+                }
+                padding: 15px 25px;
+                border-radius: 50px;
+                border: 1px $w solid;
+                background: transparent;
+                font-size: 15px;
+                font-weight: 550;
+                margin-right: 30px;
+                
+                &:hover {
+                    background: $w;
+
+                    a {
+                        color: $bg;
+                    }
+                }
+
+                a {
+                    color: $w;
+                }
+            }
+
+        }
+
+
+    }
+
+    .star {
+        position: absolute;
+        z-index: 1;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 16px;
+        margin-top: 120px;
+
+        @include res {
+            display: block;
+            margin-top: -230px;
+        }
+
+        li {
+            display: inline-flex;
+            border-radius: 20px 5px 20px 5px;
+            width: 430px;
+            height: 190px;
+            background: $w;
+            color: $bg;
+            padding: 20px;
+            position: relative;
+            top: 300px;
+            left: 10px;
+            margin-right: 10px;
+            background-color: rgba($color: #fff, $alpha: 0.7);
+            text-align: left;
+            line-height: 20px;
+
+            @include res {
+                margin-bottom: 20px;
+                box-shadow: 1px 1px 5px 1px $brand;
+                width: 95%;
+                padding-left: 15px;
+                padding-right: 15px;
+
+
+            }
+
+            &:hover {
+                background-color: rgba($color: #000, $alpha: 0.3);
+                color: $w;
+                box-shadow: 1px 1px 4px 2px $w;
+            }
+
+            img {
+                margin-right: 30px;
+                border-radius: 50px;
+            }
+
+            p .sp2 {
+                font-size: 20px;
+                font-weight: 700;
+                padding-right: 50px;
+            }
+
+            .sp3 i {
+                color: $brand;
+            }
+
+        }
+    }
+}
+
+/*------------container3-------*/
+.container3 {
+    background: #F7F7F7;
+
+    .list {
+        @include flexmain;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-bottom: 350px;
+
+        @include res {
+            display: block;
+            margin-top: 730px;
+            text-align: center;
+        }
+
+        .list1 {
+            @include res {
+                margin-bottom: 50px;
+            }
+
+            &:hover {
+                transition-duration: 0.9s;
+                transform: translate(0, -10px);
+                filter: grayscale(100%);
+            }
+        }
+    }
+}
+
+/*------------ad----------------- */
+.ad {
+    background-image: url(../image/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+}
+
+.adventure {
+
+    background: $w;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: -300px;
+    left: 75px; 
+    @include res {
+        margin-top: -20px;
+        left: -35px;
+       
+    }
+
+    h4 {
+        border-left: 4px $brand solid;
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 48px;
+        padding-bottom: 40px;
+
+        span {
+            color: $brand;
+        }
+    }
+
+    .imga {
+        display: inline-flexbox;
+        img {
+            border-radius: 10px;
+            @include res {
+                
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.background {
+    background-color: rgba($color: #000, $alpha: 0.3);
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 100px;
+    @include res{
+        padding-top: 1430px;
+    }
+    .btn8 {
+        margin-bottom: 60px;
+
+        ul {
+            .af {
+                border-top: 2px $brand solid;
+            }
+
+            li {
+                display: inline;
+                background-color: rgba($color: #000, $alpha: 0.5);
+                padding: 10px 15px;
+
+                &:hover {
+                    background: $w;
+                    opacity: 0.8;
+
+                    a {
+                        color: $brand;
+                    }
+                }
+
+                a {
+                    color: $w;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+
+            }
+        }
+    }
+
+    h1 {
+        color: $w;
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 40px;
+        @include res{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        span {
+            color: $brand;
+        }
+    }
+
+    h5 {
+        color: $w;
+        font-size: 15px;
+        margin-bottom: 60px;
+        @include res{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .btn9 {
+        button {
+            padding: 15px 30px;
+            margin-right: 25px;
+            border-radius: 50px;
+            border: none;
+
+            a {
+                color: black;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .more {
+            background: $brand;
+
+            &:hover {
+                background: black;
+
+                a {
+                    color: $w;
+                }
+            }
+        }
+
+        .cont {
+            border: 1px $w solid;
+            background: transparent;
+
+            a {
+                color: $w;
+            }
+
+            &:hover {
+                background: $w;
+
+                a {
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+/*-------------------article------------ */
+
+.article {
+    @include body;
+
+    .news1 {
+        @include flex;
+        margin-top: 80px;
+        @include res{
+            display: block;
+            padding-left: 15px;
+        }
+
+        .latest {
+            flex-basis: 50%;
+
+            h3 {
+                border-left: 4px solid $brand;
+                padding-left: 20px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 38px;
+
+                span {
+                    color: $brand;
+                }
+            }
+        }
+
+        .read {
+            flex-basis: 50%;
+            padding-top: 20px;
+            line-height: 30px;
+            color: rgba($color: #000, $alpha: 0.7);
+        }
+    }
+
+    .news2 {
+        @include flex;
+        margin-top: 50px;
+        @include res{
+            display: block;
+            padding-left: 15px;
+        }
+
+        .newsleft {
+            padding-right: 30px;
+
+            .left1 {
+                @include flex;
+                margin-bottom: 25px;
+                padding-bottom: 25px;
+                border-bottom: 1px solid gainsboro;
+
+                img {
+                    margin-right: 25px;
+                }
+
+                .leftxt {
+                    h4 {
+                        line-height: 25px;
+                        padding-bottom: 10px;
+
+                        &:hover {
+                            color: $brand;
+                        }
+                    }
+
+                    i {
+                        padding-right: 10px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: rgba($color: #000, $alpha: 0.7);
+
+                        &:hover {
+                            color: $brand;
+                        }
+                    }
+                }
+            }
+
+            #le1 {
+                border: none;
+            }
+        }
+
+        .newsmid {
+            padding-right: 30px;
+            @include res{
+                margin-bottom: 20px;
+                margin-right:15px ;
+            }
+
+            .mid1 {
+                background-image: url(../image/news4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 88%;
+                @include res{
+                    width:450px;
+                }
+
+                .text1 {
+                    background-color: rgba($color: #000, $alpha: 0.3);
+                    width: 100%;
+                    height: 100%;
+
+                    button {
+                        margin-left: 30px;
+                        margin-top: 250px;
+                        padding: 5px 15px;
+                        border-radius: 50px;
+                        border: none;
+                        background: $brand;
+
+                        &:hover {
+                            background: $bg;
+
+                            a {
+                                color: $w;
+                            }
+                        }
+
+                        a {
+                            color: $bg;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+                    }
+
+                    h3 {
+                        margin-left: 30px;
+                        margin-top: 20px;
+                        color: $w;
+
+                        &:hover {
+                            color: $brand;
+                        }
+                    }
+
+                    .new {
+                        margin-left: 30px;
+                        margin-top: 20px;
+                        display: flex;
+                        color: $w;
+                        font-size: 14px;
+
+                        img {
+                            border-radius: 50%;
+                            margin-right: 5px;
+                        }
+
+                        i {
+                            padding: 0 10px;
+                        }
+
+                        .jh {
+                            &:hover {
+                                color: $brand;
+                            }
+                        }
+
+                        .oc {
+                            &:hover {
+                                color: $brand;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .newsright {
+            @include res{
+                margin-bottom: 50px;
+                margin-right: 15px;
+            }
+            .right1 {
+                background-image: url(../image/news5.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 88%;
+                
+                
+
+                .text2 {
+                    background-color: rgba($color: #000, $alpha: 0.3);
+                    width: 100%;
+                    height: 100%;
+
+                    button {
+                        margin-left: 30px;
+                        margin-top: 250px;
+                        padding: 5px 15px;
+                        border-radius: 50px;
+                        border: none;
+                        background: $brand;
+
+                        &:hover {
+                            background: $bg;
+
+                            a {
+                                color: $w;
+                            }
+                        }
+
+                        a {
+                            color: $bg;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+                    }
+
+                    h3 {
+                        margin-left: 30px;
+                        margin-top: 20px;
+                        color: $w;
+
+                        &:hover {
+                            color: $brand;
+                        }
+                    }
+
+                    .new {
+                        margin-left: 30px;
+                        margin-top: 20px;
+                        display: flex;
+                        color: $w;
+                        font-size: 14px;
+
+                        img {
+                            border-radius: 50%;
+                            margin-right: 5px;
+                        }
+
+                        i {
+                            padding: 0 10px;
+                        }
+
+                        .jh {
+                            &:hover {
+                                color: $brand;
+                            }
+                        }
+
+                        .oc {
+                            &:hover {
+                                color: $brand;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*--------------footer1------------ */
+
+.footer {
+    background: $bg;
+    display: flex;
+    justify-content: space-between;
+    @include res{
+        display:block;
+        
+    }
+
+    .footer1 {
+        @include flex;
+        color: $w;
+        padding: 50px 0;
+        flex-basis: 65%;
+        margin-left: 75px;
+        @include res{
+            display: block;
+            margin-left: 20px;
+        }
+        .ftr1 {
+            li {
+                padding-bottom: 20px;
+
+                p {
+                    line-height: 30px;
+
+                }
+
+                i {
+                    padding-right: 10px;
+                    color: $brand;
+                }
+
+            }
+
+            .avenue {
+                display: flex;
+                line-height: 30px;
+
+                i {
+                    padding-right: 17px;
+                }
+
+
+            }
+
+        }
+
+        .ftr2 {
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+
+            ul li {
+                padding-bottom: 25px;
+
+                a {
+                    color: $w;
+
+                    &:hover {
+                        color: $brand;
+                    }
+                }
+            }
+
+            .ho {
+                display: inline-block;
+                position: relative;
+                padding-bottom: 0.25rem;
+            }
+
+            .ho::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background-color: $brand;
+                transition: width 0.35s ease-out;
+
+            }
+
+            .ho:hover::before {
+                width: 100%;
+            }
+
+        }
+
+        .ftr3 {
+            margin-right: 40px;
+
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+.footer2 {
+    background: rgb(17, 17, 17);
+    color: $w;
+    flex-basis: 35%;
+    padding-right: 50px;
+    
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 35px;
+        margin-left: 40px;
+        @include res{
+            padding-top: 70px;
+            margin-left: 15px;
+        }
+
+    }
+
+    p {
+        margin-left: 40px;
+        font-size: 15px;
+        font-weight: 400;
+        @include res{
+            margin-left: 15px;
+        }
+    }
+
+    form {
+        margin-left: 40px;
+        margin-top: 40px;
+        padding-bottom: 50px;
+        @include res{
+            margin-left: 15px;
+        }
+
+    }
+
+    .for {
+        height: 50px;
+        width: 250px;
+        border: none;
+        border-radius: 50px 0 0 50px;
+        background: $bg;
+        padding: 0 20px;
+    }
+
+    button {
+        padding: 17px 25px;
+        background: $brand;
+        border-radius: 0 50px 50px 0;
+        border: none;
+        text-align: center;
+        &:hover {
+            background: $w;
+            color: $brand;
+        }
+    }
+
+    h3 {
+        margin-left: 40px;
+        @include res{
+            margin-left: 15px;
+            padding-bottom: 70px;
+        }
+
+        i {
+            padding-left: 10px;
+
+            &:hover {
+                color: $brand;
+            }
+        }
+    }
+}
+
+/*----------------last---------------*/
+
+.last {
+    background: black;
+    color: $w;
+    font-size: 13px;
+
+    .mains {
+        @include flexmain;
+        padding: 30px 0;
+        @include res{
+            display: block;
+        }
+        .left{
+            @include res{
+                padding-bottom: 20px;
+                padding-left: 15px;
+            }
+        }
+        .right {
+            li {
+                display: inline-block;
+                padding-right: 15px;
+                border-right: 2px solid $w;
+
+                a {
+                    color: $w;
+                    padding-left: 15px;
+
+                    &:hover {
+                        color: $brand;
+                    }
+                }
+
+            }
+
+            .spec {
+                border: none;
+            }
+        }
+    }
+}
